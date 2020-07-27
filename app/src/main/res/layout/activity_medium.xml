@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context=".EasyActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:text="Question:"
+        android:textColor="#ffffff"
+        android:id="@+id/textviewquestion"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/editTextanswer"
+        android:inputType="none"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:background="#ffffff"
+        android:layout_below="@+id/textviewquestion"
+        android:hint="Type Your Answer"
+        android:textColor="#000000"
+        android:autofillHints="" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="157dp"
+        android:useDefaultMargins="true"
+        android:columnCount="3"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/n1"
+            android:textColor="#ffffff"
+            android:background="@android:color/background_dark"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/n2"
+            android:textColor="#ffffff"
+            android:background="@android:color/background_dark"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/n3"
+            android:textColor="#ffffff"
+            android:background="@android:color/background_dark"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/n4"
+            android:textColor="#ffffff"
+            android:background="@android:color/background_dark"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/n5"
+            android:textColor="#ffffff"
+            android:background="@android:color/background_dark"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/n6"
+            android:textColor="#ffffff"
+            android:background="@android:color/background_dark"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/n7"
+            android:textColor="#ffffff"
+            android:background="@android:color/background_dark"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/n8"
+            android:textColor="#ffffff"
+            android:background="@android:color/background_dark"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/n9"
+            android:textColor="#ffffff"
+            android:background="@android:color/background_dark"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/ndot"
+            android:textColor="#ffffff"
+            android:background="@android:color/background_dark"
+            android:text="." />
+
+        <Button
+            android:id="@+id/n0"
+            android:textColor="#ffffff"
+            android:background="@android:color/background_dark"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/n1clr1"
+            android:textColor="#ffffff"
+            android:background="@android:color/background_dark"
+            android:text="clr" />
+
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/textViewtimerdisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="31dp"
+        android:layout_marginTop="164dp"
+        android:layout_below="@id/editTextanswer"
+        android:text="00:10"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textViewscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewtimerdisplay"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="13dp"
+        android:layout_below="@id/editTextanswer"
+        android:text="Score = 0"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+    <Button
+        android:id="@+id/buttonenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textViewtimerdisplay"
+        android:layout_marginBottom="77dp"
+        android:onClick="Enter"
+        android:textColor="#ffffff"
+        android:background="@android:color/background_dark"
+        android:text="Enter" />
+
+    <Button
+        android:id="@+id/buttonend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewscore"
+        android:layout_alignTop="@+id/buttonenter"
+        android:textColor="#ffffff"
+        android:background="@android:color/background_dark"
+        android:onClick="End"
+        android:text="END" />
+
+</RelativeLayout>
